@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Rangoli Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <div class="bgcolor"><h1 ><marquee behavior="alternate" direction="">Interactive Rangoli Designer</marquee></h1></div>
+  
+  <div class="toolbar">
+    <input type="color" id="colorPicker" value="#ff5733">
+    <button onclick="addShape('circle')">Circle</button>
+    <button onclick="addShape('square')">Square</button>
+    <button onclick="addShape('pattern')">Pattern</button>
+    <button onclick="saveDesign()">Download</button>
+  </div>
+  
+  <canvas id="rangoliCanvas" width="600" height="600"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
